@@ -1,0 +1,31 @@
+/* PALETA DE COLORES: https://paletadecolores.com.ar/paleta/f2ecdc/574345/e3dacb/c5ffe5/f5eed4/ */
+/* GENERAL*/
+.body {background-color: #574345;}
+h1 {  font-family: "Roboto Condensed", sans-serif;}
+p{ font-family: "Montserrat", sans-serif; line-height: 2rem;}
+.header {background-color: #574345;}
+.header p {font-size: 2rem; margin-right: 35rem; text-decoration: underline; color: #e3dacb;}
+.header a {color: #c5ffe5; font-size: 1.5rem;}
+.main {background-color: #f2ecdc}
+/* FOOTER */
+.footer {background-color: #574345;}
+.footer a {color: #c5ffe5; font-size: 14px; font-style: italic;}
+.footer p {font-size: 16px; margin-right: 50rem; color: #e3dacb;}
+/* INDEX */
+.container_index h1 {display: flex; justify-content: center;}
+.container_index p {position: relative; top: 200px;}
+.p_uno {margin-left: 20px;}
+.container_index img {width: 80%; border-radius: 2rem; margin-left: 35px; margin-bottom: 10px; border-style: solid;}
+/* CONTACTOS */
+.p-3 img {width: 40%; height: 40%; margin-right: 20px;}
+.boton {border-radius: 10px;}
+.formulario {margin-top: 100px;}
+/* CV */
+.container_cv {display: flex; justify-content: center; margin-top: 25px; margin-bottom: 25px;}
+/* PROYECTOS */
+.main_proyectos img {width: 100%; height: 100%; border-radius: 30px;}
+.proyecto_uno img {margin-top: 100px;}
+.main_proyectos a {font-size: 40px; color: #574345; font-style: italic; text-decoration: none;}
+/* INFO */
+.main_info img{width: 100%; height: 100%; border-radius: 30px;}
+.main_info p {margin-top: 200px;}

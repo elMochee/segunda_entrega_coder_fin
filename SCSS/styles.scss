@@ -1,4 +1,4 @@
-/*IMPORTANTE: HACER LOS MARGIN CON MIXIN*/
+
 /*VARIABLES*/
     /*COLORES*/
     $color_marron:  #574345;
@@ -51,6 +51,37 @@
     height: $height_inf_img;
     border-radius: $radio_inf_img;
 }
+
+        /*INDEX*/
+        @mixin index_img($width_index_img, $radio_index_img, $marginl_index_img, $marginb_index_img)
+        {
+        width: $width_index_img; 
+        border-radius: $radio_index_img;
+        margin-left: $marginl_index_img;
+        margin-bottom: $marginb_index_img;
+        }
+        /*CONTACTOS*/
+        @mixin contactos_img($width_cont_img, $height_cont_img, $marginr_cont_img)
+        {
+        width: $width_cont_img;
+        height:$height_cont_img;
+        margin-right: $marginr_cont_img;
+        }
+        /*PROYECTOS*/
+        @mixin proyectos_main_img($width_pro_img, $height_pro_img, $radio_pro_img )
+        {
+        width: $width_pro_img;
+        height: $height_pro_img;
+        border-radius: $radio_pro_img;
+    }
+        /*INFO*/
+        @mixin info_img ($width_inf_img, $height_inf_img, $radio_inf_img)
+        {
+        width: $width_inf_img;
+        height: $height_inf_img;
+        border-radius: $radio_inf_img;
+        }
+
 /*GENERAL*/
 .body {background-color: $color_marron}
 h1 {font: $h1_fuente}

@@ -1,0 +1,84 @@
+
+/*VARIABLES*/
+    /*COLORES*/
+    $color_marron:  #574345;
+    $color_pastel_uno: #f2ecdc;
+    $color_pastel_dos: #e3dacb;
+    $color_verde: #c5ffe5;
+
+    /*TEXTO*/
+        /*GENERAL*/
+        $p_fuente: "Montserrat", sans-serif;
+        $h1_fuente: "Roboto Condensed", sans-serif;
+        /*HEADER*/
+        $header_p: 2rem  underline;
+        $header_a: 1.5rem;
+        /*FOOTER*/
+        $footer_p:  16px;
+        $footer_a: 14px italic;
+        /*CONTACTO*/
+        $boton_radio: 10px;
+        /*PROYECTOS*/
+        $proyectos_a: 40px italic;
+
+    /*MEDIDAS*/
+        /*INDEX*/
+        @mixin index_img($width_index_img, $radio_index_img, $marginl_index_img, $marginb_index_img)
+        {
+        width: $width_index_img; 
+        border-radius: $radio_index_img;
+        margin-left: $marginl_index_img;
+        margin-bottom: $marginb_index_img;
+        }
+        /*CONTACTOS*/
+        @mixin contactos_img($width_cont_img, $height_cont_img, $marginr_cont_img)
+        {
+        width: $width_cont_img;
+        height:$height_cont_img;
+        margin-right: $marginr_cont_img;
+        }
+        /*PROYECTOS*/
+        @mixin proyectos_main_img($width_pro_img, $height_pro_img, $radio_pro_img )
+        {
+        width: $width_pro_img;
+        height: $height_pro_img;
+        border-radius: $radio_pro_img;
+    }
+        /*INFO*/
+        @mixin info_img ($width_inf_img, $height_inf_img, $radio_inf_img)
+        {
+        width: $width_inf_img;
+        height: $height_inf_img;
+        border-radius: $radio_inf_img;
+        }
+/*GENERAL*/
+.body {background-color: $color_marron}
+h1 {font: $h1_fuente}
+p {font: $p_fuente; line-height: 2rem}
+.main {background-color: $color_pastel_uno}
+/*HEADER*/
+.header {background-color: $color_marron}
+.header p {font: $header_p; color: $color_pastel_dos; margin-right: 35rem}
+.header a {color: $color_verde; font: $header_a;}
+/*FOOTER*/
+.footer{background-color: $color_marron;}
+.footer a {font: $footer_a; color: $color_verde;}
+.footer p {font: $footer_p; color: $color_pastel_dos; margin-right: 50rem}
+/*INDEX*/
+.container_index h1 {display: flex; justify-content: center;}
+.container_index p {position: relative; top: 200px;}
+.p_uno {margin-left: 20px}
+.container_index img{ @include index_img(80%, 2rem, 35px, 10px ); border-style: solid; }
+/*CONTACTO*/
+.p-3 img {@include contactos_img(40%, 40%, 20px )}
+.formulario {margin-top: 100px;}
+.boton {border-radius: $boton_radio;}
+/*CV*/
+.container_cv {display: flex; justify-content: center; margin-top: 25px; margin-bottom: 25px;}
+/*PROYECTOS*/
+.main_proyectos img {@include proyectos_main_img(100%, 100%, 30px)}
+.proyecto_uno img {margin-top: 100px;}
+.main_proyectos a {font: $proyectos_a; font-size: 40px;  color: $color_verde;text-decoration: none; -webkit-text-stroke-width: 1px;  -webkit-text-stroke-color: black;}
+/*INFO*/
+.main_info img {@include info_img(100%, 100%, 30px) }
+.main_info p {margin-top: 100px;}

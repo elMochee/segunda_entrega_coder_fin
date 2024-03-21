@@ -1,0 +1,129 @@
+
+/*GENERAL*/
+.body {
+  background-color: #574345;
+}
+
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+}
+
+.main {
+  background-color: #f2ecdc;
+}
+
+/*HEADER*/
+.header {
+  background-color: #574345;
+}
+
+.header p {
+  font: 2rem underline;
+  color: #e3dacb;
+  margin-right: 35rem;
+}
+
+.header a {
+  color: #c5ffe5;
+  font: 1.5rem;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #574345;
+}
+
+.footer a {
+  font: 14px italic;
+  color: #c5ffe5;
+}
+
+.footer p {
+  font: 16px;
+  color: #e3dacb;
+  margin-right: 50rem;
+}
+
+/*INDEX*/
+.container_index h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container_index p {
+  position: relative;
+  top: 200px;
+}
+
+.p_uno {
+  margin-left: 20px;
+}
+
+.container_index img {
+  width: 80%;
+  border-radius: 2rem;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  border-style: solid;
+}
+
+/*CONTACTO*/
+.p-3 img {
+  width: 40%;
+  height: 40%;
+  margin-right: 20px;
+}
+
+.formulario {
+  margin-top: 100px;
+}
+
+.boton {
+  border-radius: 10px;
+}
+
+/*CV*/
+.container_cv {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*PROYECTOS*/
+.main_proyectos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.proyecto_uno img {
+  margin-top: 100px;
+}
+
+.main_proyectos a {
+  font: 40px italic;
+  font-size: 40px;
+  color: #c5ffe5;
+  text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/*INFO*/
+.main_info img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.main_info p {
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -126,4 +126,17 @@ p {
   margin-top: 100px;
 }
 
+/*ANIMACIONES*/
+#titulo {line-height: 2rem; color:black ; animation-name: titulo; animation-duration: 4s;}
+@keyframes titulo {
+  0%{color:#f2ecdc; line-height: 10px}
+  50%{color:#686458; line-height: 2rem}
+  100% {color:black ; line-height: 2rem}
+}
+.texto {color: black;animation-name: texto;  animation-duration: 4s}
+@keyframes texto{
+  0%{color:#f2ecdc;}
+  50%{color:#686458; }
+  100% {color:black }
+}
 /*# sourceMappingURL=style.css.map */
